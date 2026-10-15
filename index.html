@@ -16,50 +16,53 @@
     <meta name="theme-color" content="#f8f7f4" />
     <meta
       name="description"
-      content="Khayki Inocêncio. Marketing, comunicação e gestão que conectam marcas, pessoas e negócios."
+      content="Apresentação de Khayki Inocêncio. Marketing, Comunicação, Negócios e Gestão."
     />
     <!-- TÍTULO DA ABA: altere o texto abaixo. A descrição acima aparece em buscadores. -->
-    <title>Khayki Inocêncio — Marketing, Comunicação & Gestão</title>
+    <title>Apresentação | Khayki Inocêncio</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
   </head>
   <body>
-    <a class="skip" href="#sobre">Pular para o conteúdo</a>
+    <a class="skip" href="#conteudo">Pular para o conteúdo</a>
     <!-- CABEÇALHO: edite a marca "ki" e os nomes dos links abaixo.
-  Os destinos href="#sobre", "#experiencia" etc. precisam corresponder aos IDs das seções.
+  Os links do menu apontam para index.html, experiencias.html e biografia.html.
   Cores e espaçamento: procure CABEÇALHO E NAVEGAÇÃO no style.css.
 -->
     <header class="header">
       <div class="nav-shell">
-        <a class="brand" href="#inicio" aria-label="Khayki Inocêncio, início">
+        <a
+          class="brand"
+          href="index.html"
+          aria-label="Khayki Inocêncio, início"
+        >
           ki
           <span>.</span>
         </a>
         <nav aria-label="Navegação principal">
-          <a href="#sobre">Sobre</a>
-          <a href="#experiencia">Experiência</a>
-          <a href="#formacao">Formação</a>
+          <a href="index.html" aria-current="page" class="active">
+            Apresentação
+          </a>
+          <a href="experiencias.html">Experiências</a>
+          <a href="biografia.html">Biografia</a>
         </nav>
         <a class="nav-contact" href="#contato">
           Vamos conversar
           <svg
-            viewBox="0 0 24 24"
+            viewbox="0 0 24 24"
             fill="none"
             stroke="currentColor"
             stroke-width="1.5"
             aria-hidden="true"
           >
-            <path d="M5 19 19 5M5 5h14v14" />
+            <path d="M5 19 19 5M5 5h14v14"></path>
           </svg>
         </a>
       </div>
     </header>
-    <main id="inicio">
-      <!-- ABERTURA DO SITE: altere a frase de destaque em h1 e a apresentação em data-field="intro".
-  <br> quebra a linha; <em> aplica o destaque em cor e fonte itálica.
-  Cor do destaque: --accent no style.css. Tamanho do título: regra h1.
--->
+    <main id="conteudo" tabindex="-1">
+      <!--APRESENTAÇÃO: edite o título, o texto de abertura e a foto abaixo. Os detalhes ficam nas páginas experiencias.html e biografia.html.-->
       <section class="hero wrap" aria-labelledby="hero-title">
         <div class="hero-copy">
           <p class="eyebrow">
@@ -67,15 +70,11 @@
             MARKETING · COMUNICAÇÃO · GESTÃO
           </p>
           <h1 id="hero-title">
-            Estratégia que
+            Marcas, pessoas
             <br />
-            conecta.
+            e negócios.
             <br />
-            <em>
-              Execução que
-              <br />
-              transforma.
-            </em>
+            <em>Uma visão integrada.</em>
           </h1>
           <p class="hero-intro">
             <span data-field="intro">
@@ -84,16 +83,16 @@
             </span>
           </p>
           <div class="hero-actions">
-            <a class="button dark" href="#experiencia">
+            <a class="button dark" href="experiencias.html">
               Conheça minha trajetória
               <svg
-                viewBox="0 0 24 24"
+                viewbox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.5"
                 aria-hidden="true"
               >
-                <path d="M5 19 19 5M5 5h14v14" />
+                <path d="M5 19 19 5M5 5h14v14"></path>
               </svg>
             </a>
             <button class="text-button print-action" type="button">
@@ -110,24 +109,10 @@
         </div>
         <!-- FOTO E NOME: substitua assets/khayki.jpg para trocar a foto.
   Se usar outro arquivo, atualize src e escreva uma descrição em alt.
-  Edite o nome em data-field="name" e o tempo de experiência no selo abaixo.
+  Edite o nome em data-field="name".
 -->
         <div class="portrait-area">
           <div class="portrait-card">
-            <div class="portrait-top">
-              <span>ESTRATÉGIA + PESSOAS + RESULTADOS</span>
-              <span aria-hidden="true">
-                <svg
-                  viewBox="0 0 40 40"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="3"
-                  aria-hidden="true"
-                >
-                  <path d="M20 2v36M2 20h36M7 7l26 26M7 33 33 7" />
-                </svg>
-              </span>
-            </div>
             <img
               src="assets/khayki.jpg"
               width="308"
@@ -142,379 +127,82 @@
             <div class="portrait-bottom">
               <span>CAMBÉ, PR — BRASIL</span>
               <svg
-                viewBox="0 0 24 24"
+                viewbox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.5"
                 aria-hidden="true"
               >
-                <path d="M5 19 19 5M5 5h14v14" />
+                <path d="M5 19 19 5M5 5h14v14"></path>
               </svg>
             </div>
           </div>
-          <div class="experience-stamp">
-            <strong>9+</strong>
-            <span>
-              anos de
-              <br />
-              experiência
-            </span>
-          </div>
-          <span class="portrait-note">
-            Uma visão integrada. Muitas possibilidades.
-          </span>
         </div>
       </section>
-      <!-- FAIXA DE ESPECIALIDADES: edite os três textos de áreas de atuação. -->
       <div class="expertise-band">
         <div class="wrap">
-          <span>MARKETING & ESTRATÉGIA</span>
+          <span>MARKETING &amp; ESTRATÉGIA</span>
           <i aria-hidden="true">
             <svg
-              viewBox="0 0 40 40"
+              viewbox="0 0 40 40"
               fill="none"
               stroke="currentColor"
               stroke-width="3"
               aria-hidden="true"
             >
-              <path d="M20 2v36M2 20h36M7 7l26 26M7 33 33 7" />
+              <path d="M20 2v36M2 20h36M7 7l26 26M7 33 33 7"></path>
             </svg>
           </i>
-          <span>COMUNICAÇÃO & EXPERIÊNCIA</span>
+          <span>COMUNICAÇÃO &amp; EXPERIÊNCIA</span>
           <i aria-hidden="true">
             <svg
-              viewBox="0 0 40 40"
+              viewbox="0 0 40 40"
               fill="none"
               stroke="currentColor"
               stroke-width="3"
               aria-hidden="true"
             >
-              <path d="M20 2v36M2 20h36M7 7l26 26M7 33 33 7" />
+              <path d="M20 2v36M2 20h36M7 7l26 26M7 33 33 7"></path>
             </svg>
           </i>
-          <span>GESTÃO & NEGÓCIOS</span>
+          <span>GESTÃO &amp; NEGÓCIOS</span>
         </div>
       </div>
-      <!-- SOBRE MIM: altere o resumo em data-field="about", os números e as competências.
-  Atualize os números manualmente quando sua experiência mudar.
--->
-      <section class="about wrap section" id="sobre">
-        <div class="section-label">
-          <span>01 — SOBRE MIM</span>
+      <section class="wrap section presentation-links">
+        <div>
+          <p class="eyebrow">MINHA ATUAÇÃO</p>
           <h2>
-            Entre a ideia
+            Estratégia com contexto.
             <br />
-            e o resultado,
-            <br />
-            <em>eu conecto.</em>
+            <em>Trabalho com propósito.</em>
           </h2>
-        </div>
-        <div class="about-copy">
-          <p data-field="about">
-            Profissional com mais de 9 anos de experiência em Marketing,
-            Comunicação, Trade Marketing e Gestão Comercial, com atuação em
-            indústria, varejo, distribuição, bens de consumo e serviços. Integro
-            estratégia de marca, operação e experiência do cliente, conduzindo
-            projetos, equipes, campanhas, canais e eventos. Tenho um perfil
-            híbrido entre Marketing, Comercial, Comunicação e Gestão, com foco
-            em transformar estratégia em execução. Disponível para viagens e
-            mudanças de cidade.
+          <p>
+            Minha trajetória conecta Marketing, Comunicação e Gestão Comercial.
+            Atuo na integração entre marca, operação e experiência do cliente,
+            com vivência em indústria, varejo, distribuição e serviços.
           </p>
-          <div class="facts">
-            <div>
-              <strong>9+</strong>
-              <span>Anos de trajetória</span>
-            </div>
-            <div>
-              <strong>6</strong>
-              <span>Empresas no percurso</span>
-            </div>
-            <div>
-              <strong>B2B + B2C</strong>
-              <span>Visão de mercado</span>
-            </div>
-          </div>
-          <div class="expertise-tags">
-            <span data-field="skill1">Gestão e liderança</span>
-            <span data-field="skill2">Branding e posicionamento</span>
-            <span data-field="skill3">Trade Marketing</span>
-            <span data-field="skill4">Estratégia comercial</span>
-            <span data-field="skill5">Comunicação e eventos</span>
-          </div>
         </div>
-      </section>
-      <!-- EXPERIÊNCIA: cada bloco <details class="job"> representa uma empresa.
-  <summary> contém cargo, empresa e período. .job-body contém a descrição.
-  O atributo open deixa a experiência aberta ao carregar a página.
-  Ao adicionar outra experiência, use novos data-field exclusivos (ex.: job7, company7).
--->
-      <section class="experience-section" id="experiencia">
-        <div class="wrap section">
-          <div class="section-top">
-            <div>
-              <p class="eyebrow">02 — EXPERIÊNCIA</p>
-              <h2>
-                Trajetória que
-                <br />
-                <em>vira repertório.</em>
-              </h2>
-            </div>
+        <div class="page-links">
+          <a href="experiencias.html">
+            <span class="eyebrow">TRAJETÓRIA PROFISSIONAL</span>
+            <h3>Experiências</h3>
             <p>
-              Da indústria ao varejo, da marca à operação.
-              <br />
-              Selecione uma experiência para conhecer os detalhes.
+              Os contextos, as equipes e os projetos que fazem parte do meu
+              percurso.
             </p>
-          </div>
-          <div class="jobs">
-            <details class="job" open>
-              <summary>
-                <span class="job-number">01</span>
-                <span class="job-title">
-                  <h3 data-field="job1">Coordenador Comercial</h3>
-                  <span data-field="company1" class="company">
-                    Grupo Hayamax · Eletrônicos e Informática
-                  </span>
-                </span>
-                <span data-field="date1" class="date">Set 2025 — Ago 2026</span>
-                <span class="expand" aria-hidden="true"></span>
-              </summary>
-              <div class="job-body">
-                <p data-field="description1">
-                  Coordenação da operação comercial de Informática &amp; Games,
-                  com gestão de carteira, território, funil de oportunidades e
-                  indicadores. Desenvolvimento de estratégias comerciais,
-                  canais, precificação e novos negócios.
-                </p>
-                <ul>
-                  <li>
-                    <span data-field="result1">
-                      Liderança direta de 10 profissionais internos e 25
-                      representantes externos.
-                    </span>
-                  </li>
-                  <li>
-                    <span data-field="result2">
-                      Gestão de clientes e oportunidades com CRM/SAP, negociação
-                      com grandes contas e treinamento de equipes.
-                    </span>
-                  </li>
-                </ul>
-              </div>
-            </details>
-            <details class="job">
-              <summary>
-                <span class="job-number">02</span>
-                <span class="job-title">
-                  <h3 data-field="job2">Coordenador de Marketing</h3>
-                  <span data-field="company2" class="company">
-                    Imperador das Indústrias de Bebidas · PJ
-                  </span>
-                </span>
-                <span data-field="date2" class="date">Jan — Set 2025</span>
-                <span class="expand" aria-hidden="true"></span>
-              </summary>
-              <div class="job-body">
-                <p data-field="description2">
-                  Estruturação do departamento de Marketing e dos processos da
-                  área. Projetos de branding e rebranding, desenvolvimento de
-                  produtos com P&amp;D, campanhas, eventos, feiras e ações de
-                  PDV. Gestão de fornecedores, agências, indicadores e canais
-                  digitais.
-                </p>
-              </div>
-            </details>
-            <details class="job">
-              <summary>
-                <span class="job-number">03</span>
-                <span class="job-title">
-                  <h3 data-field="job3">Coordenador de Marketing</h3>
-                  <span data-field="company3" class="company">
-                    Farmácias Vale Verde
-                  </span>
-                </span>
-                <span data-field="date3" class="date">Jun — Dez 2024</span>
-                <span class="expand" aria-hidden="true"></span>
-              </summary>
-              <div class="job-body">
-                <p data-field="description3">
-                  Coordenação das estratégias de Marketing da rede varejista,
-                  campanhas comerciais e sazonais, Trade Marketing e experiência
-                  no PDV. Integração entre Marketing, Comercial e Operações.
-                  Planejamento, captação de patrocínio e organização da primeira
-                  corrida de rua Vale Verde.
-                </p>
-              </div>
-            </details>
-            <details class="job">
-              <summary>
-                <span class="job-number">04</span>
-                <span class="job-title">
-                  <h3 data-field="job4">Analista de Marketing Sênior</h3>
-                  <span data-field="company4" class="company">
-                    Moinho Globo Alimentos
-                  </span>
-                </span>
-                <span data-field="date4" class="date">Jan 2021 — Mai 2024</span>
-                <span class="expand" aria-hidden="true"></span>
-              </summary>
-              <div class="job-body">
-                <p data-field="description4">
-                  Estratégias de Marketing B2B e B2C, lançamentos de produtos,
-                  campanhas e projetos de embalagem e inovação. Gestão de
-                  agências, designers, influenciadores e fornecedores, com
-                  acompanhamento de BI e performance.
-                </p>
-              </div>
-            </details>
-            <details class="job">
-              <summary>
-                <span class="job-number">05</span>
-                <span class="job-title">
-                  <h3 data-field="job5">Supervisor de Trade Marketing</h3>
-                  <span data-field="company5" class="company">
-                    Cooperativa Central Aurora Alimentos
-                  </span>
-                </span>
-                <span data-field="date5" class="date">Fev — Out 2023</span>
-                <span class="expand" aria-hidden="true"></span>
-              </summary>
-              <div class="job-body">
-                <p data-field="description5">
-                  Liderança de aproximadamente 50 profissionais no Paraná,
-                  gestão de budget e execução no ponto de venda. Treinamento de
-                  equipes, negociação com grandes clientes e planejamento de
-                  ações promocionais e sazonais.
-                </p>
-              </div>
-            </details>
-            <details class="job">
-              <summary>
-                <span class="job-number">06</span>
-                <span class="job-title">
-                  <h3 data-field="job6">
-                    Analista de Marketing Sênior e posições anteriores
-                  </h3>
-                  <span data-field="company6" class="company">Dentalclean</span>
-                </span>
-                <span data-field="date6" class="date">Mai 2017 — Dez 2020</span>
-                <span class="expand" aria-hidden="true"></span>
-              </summary>
-              <div class="job-body">
-                <p data-field="description6">
-                  Evolução de estagiário a analista sênior. Campanhas B2B e B2C,
-                  eventos, congressos e feiras; materiais comerciais e
-                  institucionais. Atuação como palestrante e mestre de
-                  cerimônias, participação em Live Shops e produção de vídeos e
-                  estratégias digitais.
-                </p>
-              </div>
-            </details>
-          </div>
+            <span aria-hidden="true">→</span>
+          </a>
+          <a href="biografia.html">
+            <span class="eyebrow">QUEM SOU</span>
+            <h3>Biografia</h3>
+            <p>
+              Minha formação, minha visão de trabalho e as conexões entre
+              diferentes áreas.
+            </p>
+            <span aria-hidden="true">→</span>
+          </a>
         </div>
       </section>
-      <!-- FORMAÇÃO: edite cursos, instituições, datas, cursos complementares e idiomas.
-  Cada .education-card é um cartão de formação.
-  Cores e bordas: procure FORMAÇÃO E IDIOMAS no style.css.
--->
-      <section class="wrap section learning" id="formacao">
-        <div class="section-top">
-          <div>
-            <p class="eyebrow">03 — FORMAÇÃO & DESENVOLVIMENTO</p>
-            <h2>
-              Aprender faz parte
-              <br />
-              <em>do caminho.</em>
-            </h2>
-          </div>
-          <span class="outline-star" aria-hidden="true">
-            <svg
-              viewBox="0 0 40 40"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="3"
-              aria-hidden="true"
-            >
-              <path d="M20 2v36M2 20h36M7 7l26 26M7 33 33 7" />
-            </svg>
-          </span>
-        </div>
-        <div class="education-grid">
-          <article class="education-card">
-            <span class="card-label">PÓS-GRADUAÇÃO</span>
-            <h3 data-field="course">
-              Especialização em Planejamento e Gestão de Eventos
-            </h3>
-            <p data-field="school">Universidade Positivo · Londrina/PR</p>
-            <div class="card-bottom">
-              <span data-field="schooldate">Jul 2020</span>
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.5"
-                aria-hidden="true"
-              >
-                <path d="M5 19 19 5M5 5h14v14" />
-              </svg>
-            </div>
-          </article>
-          <article class="education-card">
-            <span class="card-label">GRADUAÇÃO</span>
-            <h3 data-field="course2">
-              Bacharelado em Comunicação Social — Publicidade e Propaganda
-            </h3>
-            <p data-field="school2">Faculdade Pitágoras · Londrina/PR</p>
-            <div class="card-bottom">
-              <span data-field="schooldate2">Dez 2018</span>
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.5"
-                aria-hidden="true"
-              >
-                <path d="M5 19 19 5M5 5h14v14" />
-              </svg>
-            </div>
-          </article>
-        </div>
-        <div class="learning-bottom">
-          <div>
-            <h3>Cursos complementares</h3>
-            <ul class="courses">
-              <li>
-                <span data-field="certificate">
-                  Comunicação Não Violenta e Relacionamento Interpessoal
-                </span>
-              </li>
-              <li>
-                <span data-field="cert2">Gerenciamento de Categoria (PDV)</span>
-              </li>
-              <li><span data-field="cert3">Vendas e relacionamentos</span></li>
-              <li>
-                <span data-field="cert4">Inovação em ambiente de negócios</span>
-              </li>
-            </ul>
-          </div>
-          <div class="languages">
-            <h3>Idiomas</h3>
-            <div>
-              <strong data-field="language1">Português</strong>
-              <span data-field="level1">Nativo</span>
-            </div>
-            <div>
-              <strong data-field="language2">Inglês e espanhol</strong>
-              <span data-field="level2">Intermediário · B2</span>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- CONTATO: edite e-mail, telefone e usuário do Instagram nos data-field abaixo.
-  O script atualiza os links automaticamente com esses textos ao carregar.
-  Informe o telefone com DDI (ex.: +55) se quiser incluir o código do país.
-  Em website, mantenha apenas o usuário do Instagram, com ou sem @.
-  Fundo desta seção: procure CONTATO no style.css.
--->
       <section class="contact-section" id="contato">
         <div class="wrap contact-inner">
           <div>
@@ -536,13 +224,13 @@
             >
               <span data-field="email">inocencio.augusto@outlook.com</span>
               <svg
-                viewBox="0 0 24 24"
+                viewbox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.5"
                 aria-hidden="true"
               >
-                <path d="M5 19 19 5M5 5h14v14" />
+                <path d="M5 19 19 5M5 5h14v14"></path>
               </svg>
             </a>
           </div>
@@ -553,13 +241,13 @@
                 <span data-field="phone">43 996 620 235</span>
               </span>
               <svg
-                viewBox="0 0 24 24"
+                viewbox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.5"
                 aria-hidden="true"
               >
-                <path d="M5 19 19 5M5 5h14v14" />
+                <path d="M5 19 19 5M5 5h14v14"></path>
               </svg>
             </a>
             <a
@@ -573,13 +261,13 @@
                 <span data-field="website">@primeirokhaykidobrasil</span>
               </span>
               <svg
-                viewBox="0 0 24 24"
+                viewbox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.5"
                 aria-hidden="true"
               >
-                <path d="M5 19 19 5M5 5h14v14" />
+                <path d="M5 19 19 5M5 5h14v14"></path>
               </svg>
             </a>
             <button class="copy-email" type="button">
@@ -594,7 +282,7 @@
   Preserve id="edit" e class="print-action" para os botões continuarem funcionando.
 -->
     <footer class="footer wrap">
-      <a class="brand" href="#inicio" aria-label="Voltar ao início">
+      <a class="brand" href="index.html" aria-label="Voltar ao início">
         ki
         <span>.</span>
       </a>
@@ -638,13 +326,13 @@
           <button class="button dark" type="submit">
             Salvar alterações
             <svg
-              viewBox="0 0 24 24"
+              viewbox="0 0 24 24"
               fill="none"
               stroke="currentColor"
               stroke-width="1.5"
               aria-hidden="true"
             >
-              <path d="M5 19 19 5M5 5h14v14" />
+              <path d="M5 19 19 5M5 5h14v14"></path>
             </svg>
           </button>
         </div>

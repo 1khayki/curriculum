@@ -52,6 +52,11 @@ document.querySelector("#year").textContent = new Date().getFullYear();
 // NOMES NO EDITOR: adicione um nome legível aqui quando criar um novo tipo de campo.
 const labels = {
   name: "Nome",
+  biointro: "Introdução da biografia",
+  bio1: "Formação e início do percurso",
+  bio2: "Desenvolvimento profissional",
+  bio3: "Visão de trabalho",
+  bio4: "Localização e disponibilidade",
   intro: "Apresentação",
   email: "E-mail",
   phone: "Telefone",
@@ -112,7 +117,7 @@ document.querySelector("#edit").addEventListener("click", () => {
     label.textContent =
       fieldLabel(key) + (/\d$/.test(key) ? ` ${key.match(/\d+$/)[0]}` : "");
     const input = document.createElement(
-      /^(intro|about|description|result)/.test(key) ? "textarea" : "input",
+      /^(intro|about|description|result|bio)/.test(key) ? "textarea" : "input",
     );
     input.id = `input-${key}`;
     input.name = key;
@@ -138,7 +143,8 @@ form.addEventListener("submit", (event) => {
   updateContacts();
   editor.close();
   try {
-    localStorage.setItem(storageKey, JSON.stringify(data));
+    const previous = JSON.parse(localStorage.getItem(storageKey) || "{}");
+    localStorage.setItem(storageKey, JSON.stringify({ ...previous, ...data }));
     announce("Currículo atualizado. Alterações salvas neste navegador.");
   } catch {
     announce(
@@ -165,25 +171,18 @@ window.addEventListener("afterprint", () => {
   for (const detail of closedBeforePrint) detail.open = false;
   closedBeforePrint = [];
 });
-for (const button of document.querySelectorAll(".print-action"))
-  button.addEventListener("click", () => window.print());
-// MENU ATIVO: destaca a seção visível durante a rolagem. Funciona sem esta melhoria em navegadores antigos.
-if ("IntersectionObserver" in window) {
-  const links = [...document.querySelectorAll("nav a")];
-  const observer = new IntersectionObserver(
-    (entries) => {
-      for (const entry of entries)
-        if (entry.isIntersecting) {
-          for (const link of links) {
-            const active = link.hash === `#${entry.target.id}`;
-            link.classList.toggle("active", active);
-            if (active) link.setAttribute("aria-current", "location");
-            else link.removeAttribute("aria-current");
-          }
-        }
-    },
-    { rootMargin: "-15% 0px -50% 0px", threshold: 0 },
-  );
-  for (const id of ["sobre", "experiencia", "formacao", "contato"])
-    observer.observe(document.getElementById(id));
+// PDF COMPLETO: leva à página que reúne todo o currículo antes de abrir a impressão.
+for (const button of document.querySelectorAll(".print-action")) {
+  button.addEventListener("click", () => {
+    if (location.pathname.endsWith("/curriculo.html")) window.print();
+    else location.href = "curriculo.html?imprimir=1";
+  });
 }
+if (new URLSearchParams(location.search).get("imprimir") === "1") {
+  window.addEventListener("load", async () => {
+    await document.fonts.ready;
+    window.print();
+    history.replaceState(null, "", location.pathname);
+  });
+}
+// O item ativo do menu é definido no HTML de cada página com aria-current="page".

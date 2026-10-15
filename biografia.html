@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <!-- GUIA DE EDIÇÃO
+  index.html: textos, dados pessoais, links e foto.
+  style.css: cores, fontes, espaçamentos e layout.
+  script.js: editor, contatos, cópia de e-mail e impressão.
+  Edite os textos preservando as tags e os atributos id, class e data-field.
+  O editor do site salva dados apenas no navegador. Para publicar para todos,
+  altere estes arquivos e confirme o commit no GitHub.
+-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="text-scale" content="scale" />
+    <!-- COR DO NAVEGADOR: acompanhe a cor --bg definida no início de style.css. -->
+    <meta name="theme-color" content="#f8f7f4" />
+    <meta
+      name="description"
+      content="Biografia de Khayki Inocêncio. Marketing, Comunicação, Negócios e Gestão."
+    />
+    <!-- TÍTULO DA ABA: altere o texto abaixo. A descrição acima aparece em buscadores. -->
+    <title>Biografia | Khayki Inocêncio</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+    <!-- CABEÇALHO: edite a marca "ki" e os nomes dos links abaixo.
+  Os links do menu apontam para index.html, experiencias.html e biografia.html.
+  Cores e espaçamento: procure CABEÇALHO E NAVEGAÇÃO no style.css.
+-->
+    <header class="header">
+      <div class="nav-shell">
+        <a
+          class="brand"
+          href="index.html"
+          aria-label="Khayki Inocêncio, início"
+        >
+          ki
+          <span>.</span>
+        </a>
+        <nav aria-label="Navegação principal">
+          <a href="index.html">Apresentação</a>
+          <a href="experiencias.html">Experiências</a>
+          <a href="biografia.html" aria-current="page" class="active">
+            Biografia
+          </a>
+        </nav>
+        <a class="nav-contact" href="#contato">
+          Vamos conversar
+          <svg
+            viewbox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            aria-hidden="true"
+          >
+            <path d="M5 19 19 5M5 5h14v14"></path>
+          </svg>
+        </a>
+      </div>
+    </header>
+    <main id="conteudo" tabindex="-1">
+      <!--BIOGRAFIA: texto baseado no currículo fornecido. Edite os parágrafos biointro e bio1 a bio4 para acrescentar sua própria narrativa. Formação e idiomas estão mais abaixo.-->
+      <section class="wrap page-intro biography-intro">
+        <div>
+          <p class="eyebrow">BIOGRAFIA PROFISSIONAL</p>
+          <h1>
+            Sou Khayki.
+            <br />
+            <em>
+              Meu trabalho nasce
+              <br />
+              das conexões.
+            </em>
+          </h1>
+          <p data-field="biointro">
+            Minha trajetória é construída no encontro entre comunicação,
+            estratégia de marca e gestão de negócios.
+          </p>
+        </div>
+        <img
+          src="assets/khayki.jpg"
+          width="308"
+          height="307"
+          alt="Khayki Inocêncio"
+        />
+      </section>
+      <section class="wrap section biography-story">
+        <div class="section-label">
+          <span>PERCURSO &amp; PERSPECTIVA</span>
+          <h2>
+            Comunicar.
+            <br />
+            Integrar.
+            <br />
+            <em>Construir.</em>
+          </h2>
+        </div>
+        <div>
+          <p data-field="bio1">
+            Sou formado em Comunicação Social — Publicidade e Propaganda pela
+            Faculdade Pitágoras, em Londrina, e tenho especialização em
+            Planejamento e Gestão de Eventos pela Universidade Positivo. A
+            comunicação é a base de um percurso que se ampliou para Marketing,
+            Trade Marketing e Gestão Comercial.
+          </p>
+          <p data-field="bio2">
+            Na Dentalclean, percorri diferentes níveis de responsabilidade, de
+            estagiário a analista sênior. Essa experiência incluiu campanhas,
+            eventos, relacionamento com parceiros e atuação como palestrante e
+            mestre de cerimônias. Em outros contextos, trabalhei com inovação,
+            posicionamento de marca, ponto de venda, desenvolvimento de canais e
+            liderança de equipes.
+          </p>
+          <p data-field="bio3">
+            Meu perfil reúne diferentes áreas para conectar a estratégia à
+            execução. Minha atuação passa pela coordenação de projetos,
+            desenvolvimento de pessoas, negociação e acompanhamento de
+            indicadores, aproximando marca, operação e experiência do cliente.
+          </p>
+          <p data-field="bio4">
+            Resido em Cambé, no Paraná, e estou disponível para viagens e
+            mudanças de cidade. Falo português e tenho inglês e espanhol
+            intermediários, nível B2.
+          </p>
+        </div>
+      </section>
+      <section class="about wrap section" id="sobre">
+        <div class="section-label">
+          <span>01 — SOBRE MIM</span>
+          <h2>
+            Entre a ideia
+            <br />
+            e o resultado,
+            <br />
+            <em>eu conecto.</em>
+          </h2>
+        </div>
+        <div class="about-copy">
+          <p data-field="about">
+            Profissional com mais de 9 anos de experiência em Marketing,
+            Comunicação, Trade Marketing e Gestão Comercial, com atuação em
+            indústria, varejo, distribuição, bens de consumo e serviços. Integro
+            estratégia de marca, operação e experiência do cliente, conduzindo
+            projetos, equipes, campanhas, canais e eventos. Tenho um perfil
+            híbrido entre Marketing, Comercial, Comunicação e Gestão, com foco
+            em transformar estratégia em execução. Disponível para viagens e
+            mudanças de cidade.
+          </p>
+          <div class="expertise-tags">
+            <span data-field="skill1">Gestão e liderança</span>
+            <span data-field="skill2">Branding e posicionamento</span>
+            <span data-field="skill3">Trade Marketing</span>
+            <span data-field="skill4">Estratégia comercial</span>
+            <span data-field="skill5">Comunicação e eventos</span>
+          </div>
+        </div>
+      </section>
+      <section class="wrap section learning" id="formacao">
+        <div class="section-top">
+          <div>
+            <p class="eyebrow">03 — FORMAÇÃO &amp; DESENVOLVIMENTO</p>
+            <h2>
+              Aprender faz parte
+              <br />
+              <em>do caminho.</em>
+            </h2>
+          </div>
+          <span class="outline-star" aria-hidden="true">
+            <svg
+              viewbox="0 0 40 40"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="3"
+              aria-hidden="true"
+            >
+              <path d="M20 2v36M2 20h36M7 7l26 26M7 33 33 7"></path>
+            </svg>
+          </span>
+        </div>
+        <div class="education-grid">
+          <article class="education-card">
+            <span class="card-label">PÓS-GRADUAÇÃO</span>
+            <h3 data-field="course">
+              Especialização em Planejamento e Gestão de Eventos
+            </h3>
+            <p data-field="school">Universidade Positivo · Londrina/PR</p>
+            <div class="card-bottom">
+              <span data-field="schooldate">Jul 2020</span>
+              <svg
+                viewbox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                aria-hidden="true"
+              >
+                <path d="M5 19 19 5M5 5h14v14"></path>
+              </svg>
+            </div>
+          </article>
+          <article class="education-card">
+            <span class="card-label">GRADUAÇÃO</span>
+            <h3 data-field="course2">
+              Bacharelado em Comunicação Social — Publicidade e Propaganda
+            </h3>
+            <p data-field="school2">Faculdade Pitágoras · Londrina/PR</p>
+            <div class="card-bottom">
+              <span data-field="schooldate2">Dez 2018</span>
+              <svg
+                viewbox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                aria-hidden="true"
+              >
+                <path d="M5 19 19 5M5 5h14v14"></path>
+              </svg>
+            </div>
+          </article>
+        </div>
+        <div class="learning-bottom">
+          <div>
+            <h3>Cursos complementares</h3>
+            <ul class="courses">
+              <li>
+                <span data-field="certificate">
+                  Comunicação Não Violenta e Relacionamento Interpessoal
+                </span>
+              </li>
+              <li>
+                <span data-field="cert2">Gerenciamento de Categoria (PDV)</span>
+              </li>
+              <li><span data-field="cert3">Vendas e relacionamentos</span></li>
+              <li>
+                <span data-field="cert4">Inovação em ambiente de negócios</span>
+              </li>
+            </ul>
+          </div>
+          <div class="languages">
+            <h3>Idiomas</h3>
+            <div>
+              <strong data-field="language1">Português</strong>
+              <span data-field="level1">Nativo</span>
+            </div>
+            <div>
+              <strong data-field="language2">Inglês e espanhol</strong>
+              <span data-field="level2">Intermediário · B2</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact-section" id="contato">
+        <div class="wrap contact-inner">
+          <div>
+            <p class="eyebrow">04 — VAMOS CONVERSAR</p>
+            <h2>
+              Boas conexões.
+              <br />
+              <em>Novas possibilidades.</em>
+            </h2>
+            <p>
+              Tem uma oportunidade ou um projeto em mente?
+              <br />
+              Vamos iniciar uma conversa.
+            </p>
+            <a
+              class="contact-email"
+              id="email-link"
+              href="mailto:inocencio.augusto@outlook.com"
+            >
+              <span data-field="email">inocencio.augusto@outlook.com</span>
+              <svg
+                viewbox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                aria-hidden="true"
+              >
+                <path d="M5 19 19 5M5 5h14v14"></path>
+              </svg>
+            </a>
+          </div>
+          <div class="contact-links">
+            <a id="phone-link" href="tel:+5543996620235">
+              <span>
+                <small>TELEFONE</small>
+                <span data-field="phone">43 996 620 235</span>
+              </span>
+              <svg
+                viewbox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                aria-hidden="true"
+              >
+                <path d="M5 19 19 5M5 5h14v14"></path>
+              </svg>
+            </a>
+            <a
+              id="social-link"
+              href="https://www.instagram.com/primeirokhaykidobrasil/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>
+                <small>INSTAGRAM</small>
+                <span data-field="website">@primeirokhaykidobrasil</span>
+              </span>
+              <svg
+                viewbox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                aria-hidden="true"
+              >
+                <path d="M5 19 19 5M5 5h14v14"></path>
+              </svg>
+            </a>
+            <button class="copy-email" type="button">
+              <span>Copiar e-mail</span>
+              <span aria-hidden="true">＋</span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- RODAPÉ: edite o nome e os textos dos botões. O ano é atualizado automaticamente.
+  Preserve id="edit" e class="print-action" para os botões continuarem funcionando.
+-->
+    <footer class="footer wrap">
+      <a class="brand" href="index.html" aria-label="Voltar ao início">
+        ki
+        <span>.</span>
+      </a>
+      <p>
+        Khayki Inocêncio
+        <span>
+          ©
+          <span id="year">2026</span>
+        </span>
+      </p>
+      <div>
+        <button id="edit" type="button">Personalizar currículo</button>
+        <button class="print-action" type="button">Salvar PDF ↓</button>
+      </div>
+    </footer>
+    <!-- JANELA DE EDIÇÃO: os campos são criados pelo script.js com base nos data-field.
+  Não apague os IDs editor, editor-form e editor-fields.
+  Dados salvos neste navegador podem substituir o texto do HTML na sua visualização.
+  Para conferir o conteúdo público original, use uma janela anônima.
+-->
+    <dialog id="editor" aria-labelledby="editor-title">
+      <form id="editor-form">
+        <div class="editor-heading">
+          <div>
+            <p class="eyebrow">SEU CURRÍCULO, DO SEU JEITO</p>
+            <h2 id="editor-title">Personalizar informações</h2>
+          </div>
+          <button type="button" class="close-editor" aria-label="Fechar editor">
+            ×
+          </button>
+        </div>
+        <p class="editor-help">
+          Edite seus dados abaixo. As alterações ficam salvas apenas neste
+          navegador. Para compartilhar, gere um PDF.
+        </p>
+        <div id="editor-fields"></div>
+        <div class="editor-actions">
+          <button class="text-button close-editor" type="button">
+            Cancelar
+          </button>
+          <button class="button dark" type="submit">
+            Salvar alterações
+            <svg
+              viewbox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              aria-hidden="true"
+            >
+              <path d="M5 19 19 5M5 5h14v14"></path>
+            </svg>
+          </button>
+        </div>
+      </form>
+    </dialog>
+    <div id="status" role="status" aria-live="polite"></div>
+  </body>
+</html>

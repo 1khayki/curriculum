@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <!-- GUIA DE EDIÇÃO
+  index.html: textos, dados pessoais, links e foto.
+  style.css: cores, fontes, espaçamentos e layout.
+  script.js: editor, contatos, cópia de e-mail e impressão.
+  Edite os textos preservando as tags e os atributos id, class e data-field.
+  O editor do site salva dados apenas no navegador. Para publicar para todos,
+  altere estes arquivos e confirme o commit no GitHub.
+-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="text-scale" content="scale" />
+    <!-- COR DO NAVEGADOR: acompanhe a cor --bg definida no início de style.css. -->
+    <meta name="theme-color" content="#f8f7f4" />
+    <meta
+      name="description"
+      content="Experiências de Khayki Inocêncio. Marketing, Comunicação, Negócios e Gestão."
+    />
+    <!-- TÍTULO DA ABA: altere o texto abaixo. A descrição acima aparece em buscadores. -->
+    <title>Experiências | Khayki Inocêncio</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+    <!-- CABEÇALHO: edite a marca "ki" e os nomes dos links abaixo.
+  Os links do menu apontam para index.html, experiencias.html e biografia.html.
+  Cores e espaçamento: procure CABEÇALHO E NAVEGAÇÃO no style.css.
+-->
+    <header class="header">
+      <div class="nav-shell">
+        <a
+          class="brand"
+          href="index.html"
+          aria-label="Khayki Inocêncio, início"
+        >
+          ki
+          <span>.</span>
+        </a>
+        <nav aria-label="Navegação principal">
+          <a href="index.html">Apresentação</a>
+          <a href="experiencias.html" aria-current="page" class="active">
+            Experiências
+          </a>
+          <a href="biografia.html">Biografia</a>
+        </nav>
+        <a class="nav-contact" href="#contato">
+          Vamos conversar
+          <svg
+            viewbox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            aria-hidden="true"
+          >
+            <path d="M5 19 19 5M5 5h14v14"></path>
+          </svg>
+        </a>
+      </div>
+    </header>
+    <main id="conteudo" tabindex="-1">
+      <!--EXPERIÊNCIAS: cada details.job contém cargo, empresa, período e atuação. Edite os textos preservando os data-field exclusivos.-->
+      <section class="wrap page-intro">
+        <p class="eyebrow">TRAJETÓRIA PROFISSIONAL</p>
+        <h1>
+          Experiências que
+          <br />
+          <em>formam minha visão.</em>
+        </h1>
+        <p>
+          Marketing, Comunicação, Trade Marketing e Gestão Comercial. Conheça as
+          responsabilidades e os projetos de cada etapa do meu percurso.
+        </p>
+        <a class="text-button" href="biografia.html">
+          Conheça também minha biografia →
+        </a>
+      </section>
+      <section class="experience-section" id="experiencia">
+        <div class="wrap section">
+          <div class="section-top">
+            <div>
+              <p class="eyebrow">02 — EXPERIÊNCIA</p>
+              <h2>
+                Trajetória que
+                <br />
+                <em>vira repertório.</em>
+              </h2>
+            </div>
+            <p>
+              Da indústria ao varejo, da marca à operação.
+              <br />
+              Selecione uma experiência para conhecer os detalhes.
+            </p>
+          </div>
+          <div class="jobs">
+            <details class="job" open>
+              <summary>
+                <span class="job-number">01</span>
+                <span class="job-title">
+                  <span class="job-role" data-field="job1">
+                    Coordenador Comercial
+                  </span>
+                  <span data-field="company1" class="company">
+                    Grupo Hayamax · Eletrônicos e Informática
+                  </span>
+                </span>
+                <span data-field="date1" class="date">Set 2025 — Ago 2026</span>
+                <span class="expand" aria-hidden="true"></span>
+              </summary>
+              <div class="job-body">
+                <p data-field="description1">
+                  Coordenação da operação comercial de Informática &amp; Games,
+                  com gestão de carteira, território, funil de oportunidades e
+                  indicadores. Desenvolvimento de estratégias comerciais,
+                  canais, precificação e novos negócios.
+                </p>
+                <ul>
+                  <li>
+                    <span data-field="result1">
+                      Liderança direta de 10 profissionais internos e 25
+                      representantes externos.
+                    </span>
+                  </li>
+                  <li>
+                    <span data-field="result2">
+                      Gestão de clientes e oportunidades com CRM/SAP, negociação
+                      com grandes contas e treinamento de equipes.
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </details>
+            <details class="job">
+              <summary>
+                <span class="job-number">02</span>
+                <span class="job-title">
+                  <span class="job-role" data-field="job2">
+                    Coordenador de Marketing
+                  </span>
+                  <span data-field="company2" class="company">
+                    Imperador das Indústrias de Bebidas · PJ
+                  </span>
+                </span>
+                <span data-field="date2" class="date">Jan — Set 2025</span>
+                <span class="expand" aria-hidden="true"></span>
+              </summary>
+              <div class="job-body">
+                <p data-field="description2">
+                  Estruturação do departamento de Marketing e dos processos da
+                  área. Projetos de branding e rebranding, desenvolvimento de
+                  produtos com P&amp;D, campanhas, eventos, feiras e ações de
+                  PDV. Gestão de fornecedores, agências, indicadores e canais
+                  digitais.
+                </p>
+              </div>
+            </details>
+            <details class="job">
+              <summary>
+                <span class="job-number">03</span>
+                <span class="job-title">
+                  <span class="job-role" data-field="job3">
+                    Coordenador de Marketing
+                  </span>
+                  <span data-field="company3" class="company">
+                    Farmácias Vale Verde
+                  </span>
+                </span>
+                <span data-field="date3" class="date">Jun — Dez 2024</span>
+                <span class="expand" aria-hidden="true"></span>
+              </summary>
+              <div class="job-body">
+                <p data-field="description3">
+                  Coordenação das estratégias de Marketing da rede varejista,
+                  campanhas comerciais e sazonais, Trade Marketing e experiência
+                  no PDV. Integração entre Marketing, Comercial e Operações.
+                  Planejamento, captação de patrocínio e organização da primeira
+                  corrida de rua Vale Verde.
+                </p>
+              </div>
+            </details>
+            <details class="job">
+              <summary>
+                <span class="job-number">04</span>
+                <span class="job-title">
+                  <span class="job-role" data-field="job4">
+                    Analista de Marketing Sênior
+                  </span>
+                  <span data-field="company4" class="company">
+                    Moinho Globo Alimentos
+                  </span>
+                </span>
+                <span data-field="date4" class="date">Jan 2021 — Mai 2024</span>
+                <span class="expand" aria-hidden="true"></span>
+              </summary>
+              <div class="job-body">
+                <p data-field="description4">
+                  Estratégias de Marketing B2B e B2C, lançamentos de produtos,
+                  campanhas e projetos de embalagem e inovação. Gestão de
+                  agências, designers, influenciadores e fornecedores, com
+                  acompanhamento de BI e performance.
+                </p>
+              </div>
+            </details>
+            <details class="job">
+              <summary>
+                <span class="job-number">05</span>
+                <span class="job-title">
+                  <span class="job-role" data-field="job5">
+                    Supervisor de Trade Marketing
+                  </span>
+                  <span data-field="company5" class="company">
+                    Cooperativa Central Aurora Alimentos
+                  </span>
+                </span>
+                <span data-field="date5" class="date">Fev — Out 2023</span>
+                <span class="expand" aria-hidden="true"></span>
+              </summary>
+              <div class="job-body">
+                <p data-field="description5">
+                  Liderança de aproximadamente 50 profissionais no Paraná,
+                  gestão de budget e execução no ponto de venda. Treinamento de
+                  equipes, negociação com grandes clientes e planejamento de
+                  ações promocionais e sazonais.
+                </p>
+              </div>
+            </details>
+            <details class="job">
+              <summary>
+                <span class="job-number">06</span>
+                <span class="job-title">
+                  <span class="job-role" data-field="job6">
+                    Analista de Marketing Sênior e posições anteriores
+                  </span>
+                  <span data-field="company6" class="company">Dentalclean</span>
+                </span>
+                <span data-field="date6" class="date">Mai 2017 — Dez 2020</span>
+                <span class="expand" aria-hidden="true"></span>
+              </summary>
+              <div class="job-body">
+                <p data-field="description6">
+                  Evolução de estagiário a analista sênior. Campanhas B2B e B2C,
+                  eventos, congressos e feiras; materiais comerciais e
+                  institucionais. Atuação como palestrante e mestre de
+                  cerimônias, participação em Live Shops e produção de vídeos e
+                  estratégias digitais.
+                </p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+      <section class="contact-section" id="contato">
+        <div class="wrap contact-inner">
+          <div>
+            <p class="eyebrow">04 — VAMOS CONVERSAR</p>
+            <h2>
+              Boas conexões.
+              <br />
+              <em>Novas possibilidades.</em>
+            </h2>
+            <p>
+              Tem uma oportunidade ou um projeto em mente?
+              <br />
+              Vamos iniciar uma conversa.
+            </p>
+            <a
+              class="contact-email"
+              id="email-link"
+              href="mailto:inocencio.augusto@outlook.com"
+            >
+              <span data-field="email">inocencio.augusto@outlook.com</span>
+              <svg
+                viewbox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                aria-hidden="true"
+              >
+                <path d="M5 19 19 5M5 5h14v14"></path>
+              </svg>
+            </a>
+          </div>
+          <div class="contact-links">
+            <a id="phone-link" href="tel:+5543996620235">
+              <span>
+                <small>TELEFONE</small>
+                <span data-field="phone">43 996 620 235</span>
+              </span>
+              <svg
+                viewbox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                aria-hidden="true"
+              >
+                <path d="M5 19 19 5M5 5h14v14"></path>
+              </svg>
+            </a>
+            <a
+              id="social-link"
+              href="https://www.instagram.com/primeirokhaykidobrasil/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>
+                <small>INSTAGRAM</small>
+                <span data-field="website">@primeirokhaykidobrasil</span>
+              </span>
+              <svg
+                viewbox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                aria-hidden="true"
+              >
+                <path d="M5 19 19 5M5 5h14v14"></path>
+              </svg>
+            </a>
+            <button class="copy-email" type="button">
+              <span>Copiar e-mail</span>
+              <span aria-hidden="true">＋</span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- RODAPÉ: edite o nome e os textos dos botões. O ano é atualizado automaticamente.
+  Preserve id="edit" e class="print-action" para os botões continuarem funcionando.
+-->
+    <footer class="footer wrap">
+      <a class="brand" href="index.html" aria-label="Voltar ao início">
+        ki
+        <span>.</span>
+      </a>
+      <p>
+        Khayki Inocêncio
+        <span>
+          ©
+          <span id="year">2026</span>
+        </span>
+      </p>
+      <div>
+        <button id="edit" type="button">Personalizar currículo</button>
+        <button class="print-action" type="button">Salvar PDF ↓</button>
+      </div>
+    </footer>
+    <!-- JANELA DE EDIÇÃO: os campos são criados pelo script.js com base nos data-field.
+  Não apague os IDs editor, editor-form e editor-fields.
+  Dados salvos neste navegador podem substituir o texto do HTML na sua visualização.
+  Para conferir o conteúdo público original, use uma janela anônima.
+-->
+    <dialog id="editor" aria-labelledby="editor-title">
+      <form id="editor-form">
+        <div class="editor-heading">
+          <div>
+            <p class="eyebrow">SEU CURRÍCULO, DO SEU JEITO</p>
+            <h2 id="editor-title">Personalizar informações</h2>
+          </div>
+          <button type="button" class="close-editor" aria-label="Fechar editor">
+            ×
+          </button>
+        </div>
+        <p class="editor-help">
+          Edite seus dados abaixo. As alterações ficam salvas apenas neste
+          navegador. Para compartilhar, gere um PDF.
+        </p>
+        <div id="editor-fields"></div>
+        <div class="editor-actions">
+          <button class="text-button close-editor" type="button">
+            Cancelar
+          </button>
+          <button class="button dark" type="submit">
+            Salvar alterações
+            <svg
+              viewbox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              aria-hidden="true"
+            >
+              <path d="M5 19 19 5M5 5h14v14"></path>
+            </svg>
+          </button>
+        </div>
+      </form>
+    </dialog>
+    <div id="status" role="status" aria-live="polite"></div>
+  </body>
+</html>
